@@ -22,37 +22,55 @@
     <a href="#">Корзина</a>
   </header>
   <h1 class="visually-hidden">Магазин готовых шаблонов</h1>
-  <main class="container clearfix">
-    <section class="filters">
+  <main class="container">
+    <div class="filters">
       <form action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
           <legend>Сетка:</legend>
-          <input id="adaptive" type="radio" name="grid" value="adaptive" checked>
-          <label for="adaptive">Адаптивная</label>
-          <input id="fixed" type="radio" name="grid" value="fixed">
-          <label for="fixed">Фиксированная</label>
-          <input id="responsive" type="radio" name="grid" value="responsive">
-          <label for="responsive">Резиновая</label>
+          <ul>
+            <li>
+            <input id="adaptive" type="radio" name="grid" value="adaptive" checked>
+            <label for="adaptive">Адаптивная</label>
+            </li>
+            <li>
+            <input id="fixed" type="radio" name="grid" value="fixed">
+            <label for="fixed">Фиксированная</label>
+            </li>
+            <li>
+            <input id="responsive" type="radio" name="grid" value="responsive">
+            <label for="responsive">Резиновая</label>
+            </li>
+          </ul>
         </fieldset>
         <fieldset>
           <legend>Особенности:</legend>
-          <input type="checkbox" id="slider" name="features" value="slider" checked>
-          <label for="slider">Слайдер</label>
-          <input type="checkbox" id="advantages" name="features" value="advantages">
-          <label for="advantages">Блок преимуществ</label>
-          <input type="checkbox" id="news" name="features" value="news" checked>
-          <label for="news">Новости</label>
-          <input type="checkbox" id="gallery" name="features" value="gallery">
-          <label for="gallery">Галерея</label>
-          <input type="checkbox" id="cart" name="features" value="cart">
-          <label for="cart">Корзина</label>
+          <ul
+          <li>
+            <input type="checkbox" id="slider" name="features" value="slider" checked>
+            <label for="slider">Слайдер</label>
+          </li>
+        <li>
+            <input type="checkbox" id="advantages" name="features" value="advantages">
+            <label for="advantages">Блок преимуществ</label>
+        </li>
+          <li>
+            <input type="checkbox" id="news" name="features" value="news" checked>
+            <label for="news">Новости</label>
+          </li>
+          <li>
+            <input type="checkbox" id="gallery" name="features" value="gallery">
+            <label for="gallery">Галерея</label>
+          </li>
+        <li>
+            <input type="checkbox" id="cart" name="features" value="cart">
+            <label for="cart">Корзина</label>
+        </li>
+      </ul>
         </fieldset>
         <button type="submit">Показать</button>
-    </section>
     </form>
-  </main>
-  <main class="product-items">
-  <section class="product">
+  </div>
+  <section class="product-items">
     <h2 class="visually-hidden">Изображения товаров</h2>
     <ul class="product-list">
       <li class="product-item">
@@ -106,30 +124,28 @@
     </ul>
   </section>
   </main>
-  <div class="footer-social">
-    <ul>
-      <li><a class="social-button" href="#" aria-label="нёрдс во Вконтакте">Вконтакте</a></li>
-      <li><a class="social-button" href="#" aria-label="нёрдс во Фейсбуке">Фейсбук</a></li>
-      <li><a class="social-button" href="#" aria-label="нёрдс в Инстаграмме">Инстаграм</a></li>
-    </ul>
-    <p>Давайте дружить,это выгодно!</p>
-    <p>Скидка 10% для друзей из социальных сетей</p>
+<footer class="footer-social">
+  <ul>
+    <li><a class="social-button" href="#" aria-label="нёрдс во Вконтакте">Вконтакте</a></li>
+    <li><a class="social-button" href="#" aria-label="нёрдс во Фейсбуке">Фейсбук</a></li>
+    <li><a class="social-button" href="#" aria-label="нёрдс в Инстаграмме">Инстаграм</a></li>
+  </ul>
+  <p>Давайте дружить,это выгодно!</p>
+  <p>Скидка 10% для друзей из социальных сетей</p>
   </div>
-  </footer>
-  <footer class="main footer">
-    <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
-      <div class="write-us-item">
-        <p>Напишите нам</p>
-        <label for="form-name">Ваше имя:</label>
-        <input type="text" id="form-name" name="form-name" placeholder="Имя Фамилия">
-        <label for="form-mail">Ваш e-mail:</label>
-        <input type="email" id="form-mail" name="form-mail" placeholder="email.example.com">
-        <label for="form-text">Текст письма:</label>
-        <textarea name="form-text" id="form-text" placeholder="В свободной форме"></textarea>
-        <button class="btn" type="submit">Отправить</button>
-      </div>
-    </form>
-  </footer>
+</footer>
+<div class="write-us-item">
+  <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
+    <p>Напишите нам</p>
+    <label for="form-name">Ваше имя:</label>
+    <input type="text" id="form-name" name="form-name" placeholder="Имя Фамилия">
+    <label for="form-mail">Ваш e-mail:</label>
+    <input type="email" id="form-mail" name="form-mail" placeholder="email.example.com">
+    <label for="form-text">Текст письма:</label>
+    <textarea name="form-text" id="form-text" placeholder="В свободной форме"></textarea>
+    <button class="btn" type="submit">Отправить</button>
+  </form>
+</div>
 </body>
 
 </html>
